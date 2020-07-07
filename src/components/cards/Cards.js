@@ -2,9 +2,6 @@ import React, {useContext}  from "react";
     // styles
 import styles from "./Cards.module.css";
     // Material Ui
-// import AirlineSeatFlatOutlinedIcon from "@material-ui/icons/AirlineSeatFlatOutlined";
-// import HowToRegOutlinedIcon from "@material-ui/icons/HowToRegOutlined";
-
 import ReportProblemIcon from '@material-ui/icons/ReportProblem';
 import HotelIcon from '@material-ui/icons/Hotel';
 import CancelIcon from '@material-ui/icons/Cancel';
@@ -34,7 +31,10 @@ const Cards = ()=>{
       deaths:0,todayDeaths:0,
        updated:0
       }
-
+     let getDate = new Date(covidData.updated) ;
+     let ymd = getDate.getFullYear()+'-'+(getDate.getMonth()+1)+'-'+getDate.getDate()
+     let hms = getDate.getHours()+ ":" + getDate.getMinutes() + ":" + getDate.getSeconds();
+     let LastUpdate = `  ${ymd} ${hms}`
     return(
       <div className={styles.container}>
         <img src='https://idc.net.pk/wp-content/themes/idc/assets/img/cidc.gif'/>   
@@ -67,8 +67,13 @@ const Cards = ()=>{
                 duration ={1}/> 
             }
           </Typography>
+            
           <Typography variant="body2" component={"div"}>
           Confirmed active cases of COVID-19
+          <hr/>
+            <Typography>
+           Last Update : {LastUpdate}
+            </Typography>
             <hr />
             <div>{<HotelIcon fontSize="large" />}</div>
           </Typography>
@@ -104,6 +109,10 @@ const Cards = ()=>{
           </Typography>
           <Typography variant="body2" component={"div"}>
           Confirmed Recoveries from COVID-19
+          <hr/>
+          <Typography>
+           Last Update : {LastUpdate}
+            </Typography>
             <hr />
             <DoneAllIcon fontSize={"large"} />
           </Typography>
@@ -139,6 +148,10 @@ const Cards = ()=>{
           </Typography>
           <Typography variant="body2" component={"div"}>
           Confirmed Active from COVID-19
+          <hr/>
+          <Typography>
+          Last Update : {LastUpdate}
+            </Typography>
             <hr />
             <ReportProblemIcon fontSize={"large"} />
           </Typography>
@@ -174,6 +187,10 @@ const Cards = ()=>{
           </Typography>
           <Typography variant="body2" component={"div"}>
           Confirmed Deaths of COVID-19
+          <hr/>
+          <Typography>
+          Last Update : {LastUpdate}
+            </Typography>
             <hr />
             <CancelIcon fontSize={"large"} />
           </Typography>

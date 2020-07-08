@@ -39,4 +39,4 @@ jobs:
       run: npm install -g surge
       
     - name: Deploying on Surge
-      run: surge ./build http://covid-tracker-bootcamp-2020.surge.sh--token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build http://covid-tracker-bootcamp-2020.surge.sh --token ${{secrets.SURGE_TOKEN}}

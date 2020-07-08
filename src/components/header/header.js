@@ -25,7 +25,7 @@ const Header = () => {
     <h1 className='typical'>Stay    <Typical
          steps={['Home 🏡', 1000, 
          'Safe ♥️', 1000,   
-          'Healthy 😃' , 100
+          'Healthy 😃' , 1000
              ]}
         loop={Infinity}
         wrapper="b"

@@ -17,7 +17,7 @@ import { makeStyles } from "@material-ui/core/styles";
       transition: "0.3s",
       boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",
       "&:hover": {
-        boxShadow: "0 16px 70px -12.125px rgba(227, 16, 16,0.3)",
+        boxShadow: "0 16px 70px -12.125px rgba(227, 16, 16,0.6)",
       },
     },
     recovered: {
@@ -30,7 +30,7 @@ import { makeStyles } from "@material-ui/core/styles";
       borderColor: "#23b023",
       boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",
       "&:hover": {
-        boxShadow: "0 16px 70px -12.125px rgba(35, 176, 35,0.4)",
+        boxShadow: "0 16px 70px -12.125px rgba(35, 176, 35,0.6)",
       },
     },
     deaths: {
@@ -59,7 +59,7 @@ import { makeStyles } from "@material-ui/core/styles";
         borderRadius : 25,
         boxShadow: "0 8px 40px -12px rgba(171, 183, 201)",
         "&:hover": {
-          boxShadow: "0 16px 70px -12.125px rgba(49, 95, 212 , 0.4)",
+          boxShadow: "0 16px 70px -12.125px rgba(49, 95, 212 , 0.6)",
         },
       },
   });

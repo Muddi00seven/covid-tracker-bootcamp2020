@@ -10,9 +10,19 @@
     text-decoration: none;
     color: rgb(94, 88, 81);
 }
-.icon{
+.icon1{
     margin-left: 7px;
-   
+    color: #211F1F;
+}
+
+.icon2{
+    margin-left: 7px;
+    color: #0e76a8 ;
+}
+
+.icon3{
+    margin-left: 7px;
+    color: #3b5998 ;
 }
 
 .inlineBlock {
@@ -28,9 +38,19 @@
 .link{
     font-size: 21px;
 }
-.icon{
-    margin-left: 10px;
-   
+.icon1{
+    margin-left: 7px;
+    color: #211F1F;
+}
+
+.icon2{
+    margin-left: 7px;
+    color: #0e76a8 ;
+}
+
+.icon3{
+    margin-left: 7px;
+    color: #3b5998 ;
 }
 
 }

@@ -34,7 +34,7 @@ const Cards = ()=>{
 
       // Date
      let getDate = new Date(covidData.updated) ;
-     let ymd = getDate.getFullYear()+'-'+(getDate.getMonth()+1)+'-'+getDate.getDate()
+     let ymd = getDate.getFullYear()+'-'+(getDate.getMonth()+1)+'-'+getDate.getDate();
      let hms = getDate.getHours()+ ":" + getDate.getMinutes() + ":" + getDate.getSeconds();
      let LastUpdate = `${ymd} ${hms}`
 
@@ -48,7 +48,7 @@ const Cards = ()=>{
         xs={12}
         md={3}
       >
-        <CardContent>
+        <CardContent >
           <Typography
             className={classes.title}
             color="textSecondary"
@@ -68,6 +68,7 @@ const Cards = ()=>{
                 separator = "," 
                 duration ={1}/> 
             }
+
           </Typography>
             
           <Typography variant="body2" component={"div"}>
@@ -88,7 +89,7 @@ const Cards = ()=>{
         xs={12}
         md={3}
       >
-        <CardContent>
+        <CardContent >
           <Typography
             className={classes.title}
             color="textSecondary"

@@ -61,7 +61,7 @@ const Charts = ()=>{
                 ]  
             }}
             
-            />
+         />
         )
         
         
@@ -98,7 +98,7 @@ const Charts = ()=>{
                   data: infectedCases.map(({_case})=>_case),
                   label: "Infected",
                   borderColor :"#e31010",
-                  fill: true   
+                  fill: true,
                  },
                  {
                     data: recoveredCases.map(({_recover})=>_recover),
@@ -115,9 +115,9 @@ const Charts = ()=>{
                 
                  
                 ]  
-            }}
+            }  }
             
-            />
+             />
         ) 
 
 

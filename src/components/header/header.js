@@ -32,6 +32,7 @@ const Header = () => {
         className='text'
       />
       </h1>
+      
 </div>
     )
 }

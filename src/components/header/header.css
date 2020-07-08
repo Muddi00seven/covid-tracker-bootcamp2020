@@ -34,7 +34,9 @@
 
  }
 
-
+.text{
+    color: rgba(40, 201, 40, 0.801);
+}
  /* media queries */
 
  @media screen and (max-width: 480px) {
@@ -73,5 +75,8 @@
     .margin3{
         margin-left: -10px;
     
+     }
+     .typical{
+         font-size: x-large
      }
  }

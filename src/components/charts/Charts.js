@@ -44,19 +44,20 @@ const Charts = ()=>{
                   borderColor :"#e31010",
                   fill: true   
                  },
-                 {
-                    data: deathCases.map(({_death})=>_death),
-                    label: "Deaths",
-                    borderColor :"black",
-                    fill: true   
-                   },
-                   {
+               
+                  {
                     data: recoveredCases.map(({_recover})=>_recover),
                     label: "Recovered",
                     borderColor :"#23b023",
                     fill: true   
                    },
                   
+                   {
+                    data: deathCases.map(({_death})=>_death),
+                    label: "Deaths",
+                    borderColor :"black",
+                    fill: true   
+                   }
                 ]  
             }}
             
@@ -100,17 +101,18 @@ const Charts = ()=>{
                   fill: true   
                  },
                  {
-                    data: deathCases.map(({_death})=>_death),
-                    label: "Deaths",
-                    borderColor :"black",
-                    fill: true   
-                   },
-                   {
                     data: recoveredCases.map(({_recover})=>_recover),
                     label: "Recovered",
                     borderColor :"#23b023",
                     fill: true   
                    },
+                 {
+                    data: deathCases.map(({_death})=>_death),
+                    label: "Deaths",
+                    borderColor :"black",
+                    fill: true   
+                   }
+                
                  
                 ]  
             }}

@@ -22,13 +22,14 @@ const Header = () => {
     <div className='inlineBlock margin3'>
     <img src='https://text2image.com/user_images/202007/text2image_V5228823_20200708_60347.png' className='imgSize3' alt='covid'/>  
     </div>
-    <h1 >Stay    <Typical
-         steps={['Home', 1000, 
-         'Safe', 1000,   
-          'Healthy' , 100
+    <h1 className='typical'>Stay    <Typical
+         steps={['Home 🏡', 1000, 
+         'Safe ♥️', 1000,   
+          'Healthy 😃' , 100
              ]}
         loop={Infinity}
         wrapper="b"
+        className='text'
       />
       </h1>
 </div>

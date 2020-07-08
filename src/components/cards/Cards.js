@@ -22,22 +22,24 @@ import {useStyles} from './useStyle';
 const Cards = ()=>{
   const classes = useStyles();
     const covid = useContext(CovidContext)
-    const {globalData} = covid
+    const {global} = covid
       // fetching this data from Global Data
-    let covidData = globalData.cases ? globalData : {
+    let covidData = global.cases ? global : {
       cases:0,todayCases:0,
       recovered:0, todayRecovered:0,
       active:0,critical:0,
       deaths:0,todayDeaths:0,
        updated:0
       }
+
+      // Date
      let getDate = new Date(covidData.updated) ;
      let ymd = getDate.getFullYear()+'-'+(getDate.getMonth()+1)+'-'+getDate.getDate()
      let hms = getDate.getHours()+ ":" + getDate.getMinutes() + ":" + getDate.getSeconds();
-     let LastUpdate = `  ${ymd} ${hms}`
+     let LastUpdate = `${ymd} ${hms}`
+
     return(
       <div className={styles.container}>
-        <img src='https://idc.net.pk/wp-content/themes/idc/assets/img/cidc.gif'/>   
      <Grid container spacing={0} justify="center">
        {/* infected */}
       <Card
@@ -52,7 +54,7 @@ const Cards = ()=>{
             color="textSecondary"
             gutterBottom
           >
-            Infected
+          Total  Infected
           </Typography>
           <Typography variant={"h5"} component={"h2"}>
           <CountUp start = {0} end= {covidData.cases} 
@@ -92,7 +94,7 @@ const Cards = ()=>{
             color="textSecondary"
             gutterBottom
           >
-            Recovered
+          Total Recovered
           </Typography>
           <Typography variant={"h5"} component={"h2"}>
               <CountUp start = {0} end= {covidData.recovered} 
@@ -170,7 +172,7 @@ const Cards = ()=>{
             color="textSecondary"
             gutterBottom
           >
-            Deaths
+           Total Deaths
           </Typography>
           <Typography variant={"h5"} component={"h2"}>
           <CountUp start = {0} end= {covidData.deaths} 

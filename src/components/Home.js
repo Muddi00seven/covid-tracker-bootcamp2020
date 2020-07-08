@@ -1,5 +1,5 @@
 import React from 'react'
-import {Cards , Charts , CountryPicker , Header } from './index';
+import {Cards , Charts , CountryPicker , Header ,Contact} from './index';
 import {CovidProvider} from "./contextAPI/CovidContext"
 
 const Home = () => {
@@ -7,12 +7,15 @@ const Home = () => {
         <div>
    <CovidProvider>
                 <Header/>
+      {/* CountryPicker */}
+                <CountryPicker/>
        {/* cards */}
                 <Cards/>
-        {/* CountryPicker */}
-                <CountryPicker/>
+   
         {/* Charts */}
                 <Charts/>
+        {/* Contact */}
+                <Contact/>
     </CovidProvider>
 
         </div>
